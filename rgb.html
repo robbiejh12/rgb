@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+<script src="rgb.js"></script>
+<script src="calc.js"></script>
+
+</head>
+
+<body onload="update()">
+
+<div id="head"><h1>RGB Picker</h1></div>
+
+<div id="body">
+
+<div id="spacer"></div>
+
+<div id="central">
+
+<div id="canvas"><canvas id="myCanvas" height="150" width="150"></canvas></div>
+
+<div class="label">Red: </div>
+<div class="slider"><input type="range" class="slider" id="red" min="0" max="255" value="0" oninput="update()" /></div>
+<div class="val" id="rv"></div><br>
+
+<div class="label">Green: </div>
+<div class="slider"><input type="range" class="slider" id="green" min="0" max="255" value="0" oninput="update()" /></div>
+<div class="val" id="gv"></div><br>
+
+<div class="label">Blue: </div>
+<div class="slider"><input type="range" class="slider" id="blue" min="0" max="255" value="0" oninput="update()" /></div>
+<div class="val" id="bv"></div><br>
+
+<div class="val" id="hex"></div>
+
+</div>
+
+</div>
+
+
+<!--<input type="button" onclick="calc();" value="go"></input>-->
+
+
+</body>
+</html>
+
+
+
